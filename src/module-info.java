@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author dbdbd
+ *
+ */
+module CodingTest {
+}
