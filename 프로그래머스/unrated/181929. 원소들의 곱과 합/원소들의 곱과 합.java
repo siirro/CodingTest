@@ -12,7 +12,6 @@ class Solution {
         
         if(m<Math.pow(p,2)) {
             answer = 1;
-        } else {
         }
         
         return answer;
