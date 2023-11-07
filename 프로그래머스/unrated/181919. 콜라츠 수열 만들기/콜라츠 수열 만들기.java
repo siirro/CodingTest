@@ -4,7 +4,6 @@ class Solution {
     public List<Integer> solution(int n) {
         List<Integer> answer = new ArrayList<>();
         boolean flag = true;
-        
         answer.add(n);
         
         while(flag) {
@@ -13,11 +12,9 @@ class Solution {
             } else {
                 n = n*3+1;
             }
-            
             answer.add(n);
             flag = n==1 ? false : true;
         }
-        
         return answer;
     }
 }
