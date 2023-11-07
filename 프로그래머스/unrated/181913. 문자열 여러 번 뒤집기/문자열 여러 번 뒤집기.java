@@ -4,10 +4,9 @@ class Solution {
         
         
         for(int i=0; i<queries.length; i++) {
-            StringBuilder rev1 = new StringBuilder(sb.substring(queries[i][0], queries[i][1]+1)).reverse();
-            sb.replace(queries[i][0], queries[i][1]+1, rev1.toString());
+            StringBuilder rev = new StringBuilder(sb.substring(queries[i][0], queries[i][1]+1)).reverse();
+            sb.replace(queries[i][0], queries[i][1]+1, rev.toString());
 
-            
         }
         return sb.toString();
     }
