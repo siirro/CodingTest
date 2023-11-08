@@ -7,7 +7,11 @@ class Solution {
             ar.add(my_string.substring(i));
         }    
         
-        Collections.sort(ar);
+        // 사전순 배열 1. collections.sort 사용
+        // Collections.sort(ar);
+        
+        // 사전순 배열 2. list.sort 사용
+        ar.sort(null);
         return ar;
     }
 }
