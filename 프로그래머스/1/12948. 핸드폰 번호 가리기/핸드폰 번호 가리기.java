@@ -3,14 +3,16 @@ class Solution {
         String answer = "";
         
         // 뒤 4자 제외한 길이만큼의 별 생성
-        String star = "";
         for(int i=0; i<phone_number.length()-4; i++) {
-            star += "*";
+            answer += "*";
         }
 
         // star와 뒤 4자를 붙임
-        star += phone_number.substring(phone_number.length()-4, phone_number.length());
-        return star;
+        answer += phone_number.substring(phone_number.length()-4, phone_number.length());
+        return answer;
+        
+        // 정규표현식
+        // answer = phone_number.replaceAll(".(?=.{4})", "*");
         
     }
 }
