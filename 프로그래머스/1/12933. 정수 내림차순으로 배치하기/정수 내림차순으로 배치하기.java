@@ -10,20 +10,13 @@ class Solution {
         char[] charArr = new char[number.length()];
         charArr = number.toCharArray();
         
-        // 내림차순 컴페레이터를 사용하기 위해 char배열 래퍼클래스배열로 만들어줌
-        Character[] CharArr = new Character[charArr.length];
-        for(int i=0; i<charArr.length; i++) {
-            CharArr[i] = charArr[i];
-        }
-        
         // 배열 속 숫자를 내림차순
-        Arrays.sort(CharArr, Collections.reverseOrder());
+        Arrays.sort(charArr);
         
         // 다시 배열속 숫자들을 하나의 문자열로 합치기
-        StringBuilder sb = new StringBuilder();
-        for(char c : CharArr) {
-            sb.append(c);
-        }
+        StringBuilder sb = new StringBuilder(String.valueOf(charArr));
+        sb.reverse();
+        
         answer = Long.parseLong(sb.toString());
         
         return answer;
