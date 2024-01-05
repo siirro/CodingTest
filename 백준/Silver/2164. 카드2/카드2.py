@@ -10,4 +10,4 @@ while len(card) > 1:
     card.popleft()
     card.append(card.popleft())
 
-print(card.pop())
+print(card.popleft())
