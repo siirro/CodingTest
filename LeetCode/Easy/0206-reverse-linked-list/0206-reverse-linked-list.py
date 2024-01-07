@@ -6,7 +6,7 @@
 class Solution:
     def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
         
-        # 첫번째 방법 : 링크드리스트->스택->새 링크드리스트 생성
+        # 링크드리스트->스택->새 링크드리스트 생성
         
         # 스택에 링크드리스트 옮기기
         current = head
@@ -25,6 +25,19 @@ class Solution:
             current = current.next
         
         return new_head.next
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
         # 두번째 방법 : 노드의 prev와 next 역전시키기
 #         prev = None
