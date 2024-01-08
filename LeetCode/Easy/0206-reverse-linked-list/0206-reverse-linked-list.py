@@ -9,8 +9,9 @@ class Solution:
         # 링크드리스트->스택->새 링크드리스트 생성
         
         # 스택에 링크드리스트 옮기기
-        current = head
         stack = []
+        current = head
+        
         while current != None:
             stack.append(current.val)
             current = current.next
